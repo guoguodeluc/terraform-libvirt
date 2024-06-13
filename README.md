@@ -1,5 +1,5 @@
 # terraform-libvirt
-通过 terraform 创建 kvm 相关资源
+通过 terraform 创建 kvm 相关资源，需要本地准备qcow2镜像。
 
 #  版本
 terraform 版本： 1.8.0
