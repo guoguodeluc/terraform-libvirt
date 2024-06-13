@@ -6,6 +6,21 @@ terraform 版本： 1.8.0
 
 provider dmacvicar/libvirt版本： 0.7.6
 
+# 缓存和配置
+## 下载 terraform
+```bash
+## 安装较新版本 terraform
+## https://releases.hashicorp.com/terraform/1.8.0/terraform_1.8.0_linux_amd64.zip
+VERSION=1.8.0
+wget https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_linux_amd64.zip
+unzip terraform_${VERSION}_linux_amd64.zip 
+mv terraform /usr/local/sbin/
+## 自动补全
+terraform -install-autocomplete
+## 查看版本
+terraform version
+```
+
 ## linux 环境变量
 ```bash
 cat > $HOME/.terraformrc <<EOF
@@ -42,7 +57,7 @@ unzip terraform-provider-external_${VERSION}_linux_amd64.zip -d ${PROVIDER_DIR}
 - `source.sh` - 设置环境变量
 - `get_vm_ip.sh` - 获取创建虚机的ip地址
 
-# terrafbacbacbacbacbackerform 配置
+# terraform 应用
 ## 环境变量
 ```bash
 source.sh 
