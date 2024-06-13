@@ -34,15 +34,13 @@ mkdir -p ${PROVIDER_DIR}
 unzip terraform-provider-external_${VERSION}_linux_amd64.zip -d ${PROVIDER_DIR}
 ```
 ## 结构
-.
-├ ─ ─  providers.tf
-├ ─ ─  backend.tf
-├── main.tf
-├── outputs.tf
-├── variables.tf
-├── source.sh
-├── get_vm_ip.sh
-└── terraform.tfvars
+- `providers.tf` - 定义了Terraform的provider信息。
+- `backend.tf` - 包含了状态管理 Backend 远程存储。
+- `variables.tf` - 包含了项目使用到的所有变量。
+- `main.tf` - 包含了资源的主要配置。 
+- `outputs.tf` - 定义了需要输出的信息
+- `source.sh` - 设置环境变量
+- `get_vm_ip.sh` - 获取创建虚机的ip地址
 
 # terrafbacbacbacbacbackerform 配置
 ## 环境变量
