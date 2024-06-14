@@ -2,7 +2,7 @@ terraform {
     backend "s3" {
         ##  Minio 登录地址和认证信息
         endpoints                   = {
-            s3                      = "http://192.168.80.80:9000"
+            s3                      = "http://192.168.xxx.xxx:9000"
         }
         access_key                  = "6LY1URQ4E30L1T3EQSN6"
         secret_key                  = "xxxxxx"
