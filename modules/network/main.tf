@@ -1,3 +1,4 @@
+## 模块内单独设置 provides
 terraform {
   required_version = ">= 1.8.0"
   required_providers {
@@ -8,6 +9,7 @@ terraform {
   }
 }
 
+## 创建网络，prevent_destroy 防止被删除
 resource "libvirt_network" "kvm_network" {
   name      = "kvm_network"
   mode      = "nat"
@@ -31,6 +33,7 @@ resource "libvirt_network" "kvm_network" {
   }
 }
 
+## 输出
 output "network_id" {
   value = libvirt_network.kvm_network.id
 }

@@ -1,3 +1,4 @@
+## 模块内单独设置 provides
 terraform {
   required_version = ">= 1.8.0"
   required_providers {
@@ -8,6 +9,7 @@ terraform {
   }
 }
 
+## 创建存储池，prevent_destroy 防止被删除
 resource "libvirt_pool" "kvm_storage_pool" {
   name = "default"
   type = "dir"
@@ -18,6 +20,7 @@ resource "libvirt_pool" "kvm_storage_pool" {
   }
 }
 
+## 输出
 output "pool_name" {
   value = libvirt_pool.kvm_storage_pool.name
 }

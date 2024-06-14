@@ -1,5 +1,7 @@
+## 使用本地缓存 provides ，并设置版本
 terraform {
   required_version = ">= 1.8.0"
+
   required_providers {
     libvirt = {
       source  = "local/dmacvicar/libvirt"
