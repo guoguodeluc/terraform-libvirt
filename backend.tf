@@ -5,7 +5,7 @@ terraform {
             s3                      = "http://192.168.80.80:9000"
         }
         access_key                  = "6LY1URQ4E30L1T3EQSN6"
-        secret_key                  = "N8qHALKFqYaZ6ixG4FkuINPqoFpq1+FqeElqH08F"
+        secret_key                  = "xxxxxx"
 
         ##  存放管理状态文件位置
         bucket                      = "terraform"
